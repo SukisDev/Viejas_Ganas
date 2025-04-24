@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #2e2e2e; /* Negro grisáceo */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+img{
+    height: auto;
+    width: 40%;
+    padding: 2%;
+    object-fit: contain;
+}
+
+@media (max-width: 850px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 80%;
+        height: auto;
+        object-fit: contain !important;
+    }
+}
